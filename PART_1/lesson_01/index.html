@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тема 1</title>
+
+    <!-- ***********************************************
+     Prism.js — підсвічування синтаксису
+    *************************************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-twilight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"
+      defer
+    ></script>
+
+    <!-- ===== Мови, які використовуємо ===== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"
+      defer
+    ></script>
+    <!-- HTML -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"
+      defer
+    ></script>
+    <!-- CSS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"
+      defer
+    ></script>
+    <!-- JavaScript -->
+
+    <!-- ===== Плагіни ===== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"
+      defer
+    ></script>
+
+    <!-- ***********************************************
+         Власні стилі та скрипти
+    *************************************************** -->
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="../index.html">всі теми</a></li>
+            <li><a href="#">тема 2 →</a></li>
+          </ul>
+        </nav>
+
+        <div class="typewriter">
+          <div><h1>⭒.⋆ Тема 1 ⋆˚.</h1></div>
+        </div>
+
+        <p>Вступ</p>
+
+        <!-- Вкладки (навігація між частинами) -->
+        <nav class="tabs">
+          <button type="button" class="tab-btn active" data-tab="part1">
+            Налаштування середовища
+          </button>
+          <button type="button" class="tab-btn" data-tab="part2">
+            Змінні та типи даних
+          </button>
+          <button type="button" class="tab-btn" data-tab="part3">
+            Консоль та оператори
+          </button>
+          <button type="button" class="tab-btn homework" data-tab="part4">
+            Домашнє завдання
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ===== ЧАСТИНА 1 ===== -->
+        <div class="tab-content active" id="tab-part1">
+          <!-- ТЕОРІЯ 1 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Теорія</h2>
+            </div>
+
+            <div class="content">
+              <hr />
+
+              <!-- VS Code -->
+              <h3 id="vs-code">✨ VS Code</h3>
+              <p>Пояснення</p>
+
+              <hr />
+
+              <!-- Node.js -->
+              <h3 id="node.js">✨ Node.js</h3>
+              <p>Пояснення</p>
+
+              <hr />
+
+              <!--Extentions -->
+              <h3 id="extentions">✨ Extentions</h3>
+              <p>Пояснення</p>
+
+              <!-- <pre><code class="language-javascript">приклад коду</code></pre>
+              <img src="./images/part_1_0#.jpg" alt="результат коду" /> -->
+
+              <hr />
+            </div>
+          </section>
+
+          <!-- ЗАВДАННЯ 1 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2 class="accent">Завдання 1</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Завдання</h3>
+              <ol>
+                <li>
+                  Завантажити<a
+                    href="https://code.visualstudio.com/download"
+                    target="_blank"
+                  >
+                    VS Code</a
+                  >.
+                </li>
+                <li>
+                  Завантажити
+                  <a href="https://nodejs.org/uk/download" target="_blank"
+                    >Node.js</a
+                  >.
+                </li>
+                <li>
+                  Для VS Code встановити розширення:
+                  <ul>
+                    <li>Live Server</li>
+                    <li>Prettier</li>
+                    <li>Code Runner</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </section>
+        </div>
+
+        <!-- ===== ЧАСТИНА 2 ===== -->
+        <div class="tab-content" id="tab-part2">
+          <!-- ТЕОРІЯ 2 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Теорія</h2>
+            </div>
+
+            <div class="content">
+              <hr />
+
+              <!-- .js file -->
+              <h3 id="js-file">✨ .js файл</h3>
+              <p>Пояснення</p>
+
+              <hr />
+
+              <!-- variables -->
+              <h3 id="variable">✨ Змінні (let, const)</h3>
+              <p>Пояснення</p>
+
+              <hr />
+
+              <!-- data types -->
+              <h3 id="data-types">✨ Прості типи даних</h3>
+              <p>Пояснення</p>
+              <ul>
+                <li><b>число</b> — ...</li>
+                <li><b>текст</b> — "..."</li>
+                <li><b>boolean</b> — true/false</li>
+              </ul>
+
+              <!-- <pre><code class="language-javascript">приклад коду</code></pre> -->
+              <!-- <img src="./images/part_2_0#.jpg" alt="результат коду" /> -->
+
+              <hr />
+            </div>
+          </section>
+
+          <!-- ПРИКЛАД 2 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Приклад</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Завдання</h3>
+              <ol>
+                <li>...</li>
+              </ol>
+
+              <h3>✨ Приклад розв'язання</h3>
+              <pre><code class="language-javascript">приклад коду</code></pre>
+
+              <h3>✨ Результат</h3>
+              <img src="./images/part_2_0#.jpg" alt="результат коду" />
+            </div>
+          </section>
+
+          <!-- ЗАВДАННЯ 2 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2 class="accent">Завдання 2</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Завдання</h3>
+              <ol>
+                <li>...</li>
+              </ol>
+
+              <h3>✨ Очікуваний результат</h3>
+              <img src="./images/part_2_0#.jpg" alt="результат коду" />
+            </div>
+          </section>
+        </div>
+
+        <!-- ===== ЧАСТИНА 3 ===== -->
+        <div class="tab-content" id="tab-part3">
+          <!-- ТЕОРІЯ 3 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Теорія</h2>
+            </div>
+
+            <div class="content">
+              <hr />
+
+              <!-- console.log() -->
+              <h3 id="console-log">✨ Консоль</h3>
+              <p>Пояснення</p>
+
+              <hr />
+
+              <!-- opetarors -->
+              <h3 id="operators">✨ Базові оператори</h3>
+              <p>Пояснення</p>
+              <ul>
+                <li><b>=</b> — присвоєння</li>
+                <li><b>+</b> — додавання</li>
+                <li><b>-</b> — віднімання</li>
+                <li><b>*</b> — множення</li>
+                <li><b>/</b> — ділення</li>
+                <li><b>%</b> — остача</li>
+                <li><b>**</b> — піднесення до степеня</li>
+              </ul>
+
+              <hr />
+
+              <!-- template strings -->
+              <h3 id="template-strings">✨ Шаблонні рядки</h3>
+              <p>Пояснення</p>
+
+              <!-- <pre><code class="language-javascript">приклад коду</code></pre> -->
+              <!-- <img src="./images/part_3_0#.jpg" alt="результат коду" /> -->
+
+              <hr />
+            </div>
+          </section>
+
+          <!-- ПРИКЛАД 3 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Приклад</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Завдання</h3>
+              <ol>
+                <li>...</li>
+              </ol>
+
+              <h3>✨ Приклад розв'язання</h3>
+              <pre><code class="language-javascript">приклад коду</code></pre>
+
+              <h3>✨ Результат</h3>
+              <img src="./images/part_3_0#.jpg" alt="результат коду" />
+            </div>
+          </section>
+
+          <!-- ЗАВДАННЯ 3 -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2 class="accent">Завдання 3</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Завдання</h3>
+              <ol>
+                <li>...</li>
+              </ol>
+
+              <h3>✨ Очікуваний результат</h3>
+              <img src="./images/part_3_0#.jpg" alt="результат коду" />
+            </div>
+          </section>
+        </div>
+
+        <!-- ===== ДОМАШНЄ ЗАВДАННЯ ===== -->
+        <div class="tab-content" id="tab-part4">
+          <!-- КОД ДЛЯ ПОВТОРЕННЯ -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>Повторення</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Код для повторення теми</h3>
+              <p>
+                Ознайомтеся з наведеним нижче кодом та спробуйте самостійно
+                розібратися, що робить кожен рядок:
+              </p>
+
+              <pre><code class="language-javascript">приклад коду</code></pre>
+
+              <p>Що виведеться у консоль після виконання цього коду?</p>
+              <ol>
+                <li><img src="./images/hw_01.jpg" alt="результат коду" /></li>
+                <li><img src="./images/hw_02.jpg" alt="результат коду" /></li>
+                <li><img src="./images/hw_03.jpg" alt="результат коду" /></li>
+                <li><img src="./images/hw_04.jpg" alt="результат коду" /></li>
+                <li><img src="./images/hw_05.jpg" alt="результат коду" /></li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- ENGLISH -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2>English</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ English dictionary</h3>
+              <p>Англійські слова до теми:</p>
+              <ul>
+                <li><b>word</b> — слово;</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ТЕСТ -->
+          <section>
+            <div class="toggle-header">
+              <button type="button">▶</button>
+              <h2 class="accent">Тест</h2>
+            </div>
+
+            <div class="content">
+              <h3>✨ Тест для закріплення знань</h3>
+              <p>
+                Щоб повторити і краще запам'ятати тему, пройдіть тест за
+                посиланням:
+              </p>
+              <a href="#" target="_blank" class="test-link">Тест</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      Made by
+      <a href="https://github.com/helenhapp" target="_blank">Olena Hapchyna</a>
+    </footer>
+
+    <button id="scrollTopBtn" title="Повернутися нагору">🚀</button>
+  </body>
+</html>
